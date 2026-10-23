@@ -1,0 +1,107 @@
+/* Same structure as the Torpedo One site, in Torpedo Core coral (#FF7A5C) + brand blues */
+:root{
+  --bg:#06081a;
+  --bg-2:#0b0e24;
+  --card:#0c1028;
+  --line:rgba(255,122,92,.32);
+  --text:#fff;
+  --muted:#c9cbdc;
+  --accent:#ff7a5c;
+  --blue:#2f5bff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Jost",Futura,"Century Gothic",system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+h1,h2,h3,h4{font-family:"League Spartan","Jost",sans-serif;font-weight:600;line-height:1.15}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:2rem}
+.center{text-align:center}
+.accent{color:var(--accent)}
+section{padding-top:80px;padding-bottom:80px}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:40px 0 80px;
+  background:
+    linear-gradient(180deg,rgba(6,8,26,.15) 0%,rgba(6,8,26,.55) 55%,var(--bg) 100%),
+    url(assets/hero-bg.jpg) center/cover no-repeat,
+    var(--bg)}
+.hero .wrap{position:relative}
+.top{display:flex;justify-content:flex-end;margin-bottom:clamp(60px,12vw,140px)}
+.logo img{display:block;height:clamp(40px,5vw,66px);width:auto}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4.2rem);font-weight:700;letter-spacing:-.01em;max-width:900px}
+.lead{font-size:clamp(1rem,1.7vw,1.35rem);max-width:900px;margin:1.6rem 0 3rem;color:#eef}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;border:1px solid var(--line);border-radius:18px;padding:34px 12px;text-align:center;
+  background:linear-gradient(180deg,rgba(16,20,52,.92),rgba(8,10,30,.92));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 10px 40px rgba(0,0,0,.35);
+  transition:border-color .25s,box-shadow .25s,transform .25s,background .25s}
+.stat strong{font-family:"League Spartan","Jost",sans-serif;display:block;white-space:nowrap;font-size:clamp(1.5rem,3.2vw,3rem);font-weight:700;line-height:1.05}
+.stat span{display:block;text-transform:uppercase;font-size:clamp(.8rem,1.2vw,1.1rem);letter-spacing:.02em;margin-top:6px}
+.stat:hover{border-color:#ffb39f;background:linear-gradient(180deg,#d9573c 0%,#2a2f8a 100%);
+  box-shadow:0 0 0 2px rgba(255,170,150,.85),0 0 30px 6px rgba(255,122,92,.6),0 0 90px 20px rgba(47,91,255,.45);transform:translateY(-6px) scale(1.03)}
+
+/* WHY */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-bottom:0}
+.pillar{border-left:2px solid var(--accent);padding:4px 0 4px 20px}
+.pillar h3{font-size:1.3rem;margin-bottom:6px}
+.pillar p{color:var(--muted)}
+
+/* PRICING */
+.pricing h2{margin-bottom:1.6rem}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price{background:var(--bg-2);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:26px 24px}
+.price strong{font-family:"League Spartan","Jost",sans-serif;display:block;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1}
+.price span{color:var(--muted)}
+.note{margin-top:20px;color:var(--muted);font-size:1.05rem;max-width:860px}
+
+/* PLATFORM */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 28px}
+.feat{display:flex;gap:18px;align-items:flex-start;background:var(--bg-2);border:1px solid rgba(255,255,255,.05);border-radius:14px;padding:26px 24px}
+.feat svg{flex:0 0 26px;width:26px;height:26px;margin-top:4px;fill:none;stroke:#5a5f7c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.feat h4{color:var(--accent);font-size:1.2rem;margin-bottom:4px}
+.feat p{color:var(--muted)}
+
+/* AI AGENTS */
+.agents-intro{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center;margin-bottom:40px}
+.agents-intro h2{margin-bottom:1rem}
+.agents-intro p{color:var(--muted);font-size:1.1rem}
+.agents-intro img{width:100%;max-width:300px;height:auto;justify-self:center;filter:drop-shadow(0 0 40px rgba(255,122,92,.35))}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;padding:24px 20px;
+  background:linear-gradient(180deg,rgba(20,26,70,.9),var(--card));transition:border-color .3s,box-shadow .3s,transform .3s}
+.card:hover{border-color:rgba(255,160,135,.95);box-shadow:0 0 28px rgba(255,122,92,.4),0 0 70px rgba(47,91,255,.35);transform:translateY(-4px)}
+.count{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.card h3{font-size:1.5rem;font-weight:500;margin:4px 0 14px}
+.card ul{list-style:none;display:grid;gap:10px;color:var(--muted);font-size:.96rem}
+.card li b{color:#fff;font-weight:600}
+.roi{margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);font-size:.92rem;color:#ffc2b3}
+.card ul + .roi{margin-top:18px}
+
+/* CTA */
+.cta{padding:110px 0 140px;background:linear-gradient(180deg,var(--bg) 0%,#1a2366 40%,#3b46c4 75%,#e0684d 100%)}
+.cta h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700}
+.contacts{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.contact{display:flex;flex-direction:column;gap:2px;min-width:280px;padding:16px 20px;border-radius:14px;background:rgba(12,16,44,.92);text-decoration:none;transition:background .2s,transform .2s}
+.contact:hover{background:rgba(22,28,70,.95);transform:translateY(-2px)}
+.contact b{font-weight:600}
+.contact span{color:#ffab96;text-decoration:underline}
+.foot{text-align:center;padding:22px;font-size:.85rem;color:#fff;background:#e0684d}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  .stats,.cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  section{padding-top:56px;padding-bottom:56px}
+  .wrap{padding-left:16px;padding-right:16px}
+  .why,.prices,.grid,.agents-intro{grid-template-columns:1fr}
+  .agents-intro img{max-width:180px}
+  .top{margin-bottom:56px}
+  .stat{padding:24px 8px}
+  .contact{min-width:0;width:100%}
+}
+@media (max-width:460px){
+  .cards{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.stat:hover,.card:hover{transform:none}}
