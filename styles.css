@@ -71,7 +71,6 @@ section{padding-top:80px;padding-bottom:80px}
 .card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;padding:24px 20px;
   background:linear-gradient(180deg,rgba(20,26,70,.9),var(--card));transition:border-color .3s,box-shadow .3s,transform .3s}
 .card:hover{border-color:rgba(255,160,135,.95);box-shadow:0 0 28px rgba(255,122,92,.4),0 0 70px rgba(47,91,255,.35);transform:translateY(-4px)}
-.count{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 .card h3{font-size:1.5rem;font-weight:500;margin:4px 0 14px}
 .card ul{list-style:none;display:grid;gap:10px;color:var(--muted);font-size:.96rem}
 .card li b{color:#fff;font-weight:600}

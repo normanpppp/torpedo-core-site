@@ -1,4 +1,4 @@
-# Torpedo Core — mini site
+# Torpedo Core mini site
 
 Static one pager (HTML + CSS, no build step) built from the "Torpedo Core Sales Deck" (Oct 2026), in the same layout as the Torpedo One site.
 Brand assets (logo, hero background, 3D diamond) come from the Torpedo brand kit.
